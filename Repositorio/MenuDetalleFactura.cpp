@@ -23,19 +23,19 @@ public class DetalleFactura
             switch (opcion)
             {
             case "1":
-                CrearEmpleado()
+                CrearDetalleFactura()
                 break;
             case "2":
-                ActualizarEmpleado()
+                ActualizarDetalleFactura()
                     break,
             case "3":
-                EliminarEmpleado()
+                EliminarDetalleFactura()
                     break,
             case "4":
                 salir = true;
                 break,
             default:
-                Console.WriteLine("Opción Incorrecta, vuelva a intentarlo")
+                Console.WriteLine("Opción Invalida vuelva a intentarlo")
                 break;
             }
 
@@ -43,16 +43,16 @@ public class DetalleFactura
         }
     }
 
-    public static void CrearEmpleado()
+    public static void CrearDetallesFactura()
     {
         Console.WriteLine("Ingrese los detalles de la nueva factura ");
     }
     public static void ActualizarEmpleado()
     {
-        Console.WriteLine("Ingrese el ID del empleado a actualizar...");
+        Console.WriteLine("Ingrese el ID del DetalleFactura a actualizar...");
     }
     public static void EliminarEmpleado()
     {
-        Console.WriteLine("Ingrese el ID del empleado a eliminar...");
+        Console.WriteLine("Ingrese el ID del DetalleFactura a eliminar...");
     }
 }
